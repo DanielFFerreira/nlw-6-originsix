@@ -1,0 +1,43 @@
+// Footer
+.footer {
+  background-color: $base-color;
+
+  &.section {
+    padding: 4rem 0;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .brand {
+    p {
+      color: $text-color-light;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: $text-color-light;
+  }
+
+  .social {
+    grid-auto-flow: column;
+    width: fit-content;
+
+    a {
+      transition: 0.3s;
+      display: inline-block;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  .divider-2 {
+    background: linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
+  }
+}
