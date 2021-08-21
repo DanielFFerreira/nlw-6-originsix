@@ -1,0 +1,138 @@
+#header {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 2rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $body-color;
+  width: 100%;
+
+  &.scroll {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15); 
+    background-color: $body-color;
+  }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.31rem;
+  font-family: $title-font;
+  color: $title-color;
+
+  span {
+    color: $base-color;
+  }
+}
+
+.logo-alt span {
+  color: $body-color;
+}
+
+// Navigation
+
+.nav {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  ul li {
+    text-align: center;
+
+    a {
+      transition: color 0.2s;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: $base-color;
+      }
+
+      &::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $base-color;
+
+        position: absolute;
+        left: 0;
+        bottom: -1.5rem;
+
+        transition: width 0.2s;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+
+    ul {
+      display: none;
+    }
+  }
+
+  // Mostrar menu
+
+  &.show {
+    .menu {
+      opacity: 1;
+      visibility: visible;
+
+      background: $body-color;
+
+      height: 100vh;
+      width: 100vw;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      display: grid;
+      place-content: center;
+
+      ul {
+        display: grid;
+
+        &.grid {
+          gap: 3rem;
+        }
+      }
+    }
+  }
+
+  .icon-close {
+    visibility: hidden;
+    opacity: 1;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+    transition: 0.2s;
+  }
+
+  &.show {
+    div.icon-close {
+      visibility: visible;
+      opacity: 1;
+      top: 1.5rem;
+    }
+  }
+}
+
+.toggle {
+  color: $base-color;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
