@@ -1,0 +1,36 @@
+#about {
+  background: white;
+  @include fill-bg();
+
+  .container {
+    margin: 0;
+  }
+
+  .image {
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: $base-color-second;
+      position: absolute;
+      top: -8.3%;
+      left: -33%;
+      z-index: 0;
+    }
+
+    img {
+      position: relative;
+    }
+  }
+
+  .text {
+    margin-right: 1.5rem;
+  }
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
