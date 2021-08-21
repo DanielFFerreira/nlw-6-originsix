@@ -1,0 +1,28 @@
+@mixin sub-title-size {
+  font-size: $subtitle-font-size;
+}
+
+@mixin fill-bg {
+  .fill-bg {
+    position: relative;
+    font-weight: 700;
+
+    &:hover {
+      &::after {
+        height: 94%;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 10px;
+      background: $base-color;
+      transition: height 0.5s ease-in-out;
+    }
+  }
+}
