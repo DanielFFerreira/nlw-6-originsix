@@ -1,0 +1,17 @@
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla($hue, 36%, 57%, 1),
+    hsla($hue, 65%, 88%, 0.34)
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla($hue, 65%, 88%, 0.34),
+    hsla($hue, 36%, 57%, 1)
+  );
+}
