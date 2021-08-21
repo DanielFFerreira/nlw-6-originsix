@@ -1,0 +1,23 @@
+/*====  VARIABLES ============================ */
+$header-height: 4.5rem;
+
+/* colors */
+$hue: 159;
+$border-color: #e4e4e4;
+/* HSL color mode */
+$base-color: hsl($hue 36% 57%);
+$base-color-second: hsl($hue 65% 88%);
+$base-color-alt: hsl($hue 57% 53%);
+$title-color: hsl(210, 9%, 31%);
+
+$text-color: hsl(0 0% 46%);
+$text-color-light: hsl(0 0% 98%);
+$body-color: hsl(0 0% 98%);
+$dark: #000;
+
+/* fonts */
+$title-font-size: 1.875rem;
+$subtitle-font-size: 1rem;
+
+$title-font: "Poppins", sans-serif;
+$body-font: "DM Sans", sans-serif;
