@@ -1,0 +1,15 @@
+{
+  "name": "originsix_parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./index.html --no-cache --no-source-maps",
+    "build": "parcel build ./index.html --no-cache --no-source-maps",
+    "prebuild": "rm -rf dist"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.38.0"
+  }
+}
