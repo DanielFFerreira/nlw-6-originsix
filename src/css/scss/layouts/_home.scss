@@ -1,0 +1,51 @@
+#home {
+  overflow: hidden;
+  @include fill-bg();
+  
+  .container {
+    margin: 0;
+    padding: 5rem 0 0;
+  }
+
+  .image {
+    position: relative;
+  
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: $base-color-second;
+      position: absolute;
+      top: -16.8%;
+      left: 16.7%;
+      z-index: 0;
+    }
+
+
+    img {
+      position: relative;
+      right: 2.93rem;
+    }
+  }
+}
+
+
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
