@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  // padding: calc(4rem + 3.5rem) 0rem;
+  padding: 4rem 0;
+
+  .title {
+    margin-bottom: 1.2rem;
+  }
+
+  .subtitle {
+    @include sub-title-size;
+  }
+
+  header {
+    margin-bottom: 4rem;
+
+    strong {
+      color: $base-color;
+    }
+  }
+} 
+
