@@ -1,0 +1,17 @@
+.button {
+  background-color: $base-color;
+  border: none;
+  color: $text-color-light;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem $body-font;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: $base-color-alt;
+  cursor: pointer;
+}
