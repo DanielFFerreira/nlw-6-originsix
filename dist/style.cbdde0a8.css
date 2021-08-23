@@ -56,6 +56,7 @@ h1 {
 /* fonts */
 .button {
   background-color: #6ab99d;
+  box-shadow: 0 3.88px 18.81px 0 rgba(132, 210, 184, 0.46);
   border: none;
   color: #fafafa;
   height: 3.5rem;
@@ -70,6 +71,9 @@ h1 {
 .button:hover {
   background: #43cb9c;
   cursor: pointer;
+  filter: brightness(1.1);
+  transition: all 0.2s ease;
+  box-shadow: 0 3.88px 18.81px 0 rgba(106, 185, 157, 0.88);
 }
 
 .title {
@@ -211,7 +215,7 @@ h1 {
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 2.9rem 0;
 }
 .section .title {
   margin-bottom: 1.2rem;
@@ -436,6 +440,10 @@ h1 {
 }
 .swiper-pagination-bullet-active {
   background-color: #6ab99d;
+}
+
+#ourclients {
+  padding: 5rem 0 0 0;
 }
 
 #contact .fill-bg {

@@ -188,6 +188,17 @@ var swiper = new Swiper('.swiper-container', {
     }
   }
 });
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+
+var scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+});
+scrollReveal.reveal("#home .image, #home .text,\n  #about .image, #about .text,\n  #services header, #services .card,\n  #testimonials header, #testimonials .testimonials\n  #contact .text, #contact .links,\n  #ourclients .title, ul, img\n  footer .brand, footer .social\n  ", {
+  Interval: 100
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -216,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38295" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44021" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
