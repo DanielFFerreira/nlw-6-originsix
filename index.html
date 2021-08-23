@@ -56,6 +56,7 @@
           alt="Mulher sorrindo penteando outra mulher"
         />
       </div>
+
       <div class="text">
         <h2 class="title">
           <span class="font-weight-normal">Saúde</span> 
@@ -167,7 +168,7 @@
       </header>
       <div class="testimonials swiper-container">
         <div class="swiper-wrapper">
-          <div class="testimonial swiper-slide">
+          <div class="testimonial swiper-slide swiper-slide-active">
             <blockquote>
               <p>
                 <span>&ldquo;</span>
@@ -183,7 +184,7 @@
             </blockquote>
           </div>
 
-          <div class="testimonial swiper-slide">
+          <div class="testimonial swiper-slide swiper-slide-prev">
             <blockquote>
               <p>
                 <span>&ldquo;</span>
@@ -199,7 +200,7 @@
             </blockquote>
           </div>
 
-          <div class="testimonial swiper-slide">
+          <div class="testimonial swiper-slide swiper-slide-prev">
             <blockquote>
               <p>
                 <span>&ldquo;</span>
@@ -217,12 +218,70 @@
         </div>
 
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination-bullets" style="text-align: center;">
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
+
       </div>
     </div>
   </section>
 
   <div class="divider-2"></div>
+
+  <!-- OUR CLIENTS -->
+  <section class="section" id="ourclients">
+    <div class="container">
+      <div class="ourclients">
+        <h1 class="title">Nossos clientes</h1>
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-jequiti.png" 
+                alt="logo jequiti"
+              >
+            </li>
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-embeleze.png" 
+                alt="logo-embeleze"
+              >
+            </li>
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-matisse.png" 
+                alt="logo matisse"
+              >
+            </li>
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-pantene.png" 
+                alt="logo pantene"
+              >
+            </li>
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-avon.png" 
+                alt="logo avon"
+              >
+            </li>
+            <li class="swiper-slide">
+              <img 
+                src="./assets/fotos/logo-vulti.png" 
+                alt="logo vulti"
+              >
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-1"></div>
 
   <!-- CONTACT -->
   <section class="section" id="contact">
@@ -291,6 +350,9 @@
 
   <!-- swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- main.js -->
   <script src="./src/main.js"></script>
