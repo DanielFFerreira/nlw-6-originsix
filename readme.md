@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Empacotador
 
-- Parcel js(https://parceljs.org/)
+- [Parcel js](https://parceljs.org/)
 
 Bibliotecas
 
