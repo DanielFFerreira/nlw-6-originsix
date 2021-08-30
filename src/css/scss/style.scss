@@ -117,6 +117,12 @@
   }
 }
 
+@media (min-width: 550px) and (max-width: 811px) {
+  .image {
+    max-width: 75%;
+  }
+}
+
 /* large devices: 812 > */
 @media (min-width: 812px) {
   :root {
