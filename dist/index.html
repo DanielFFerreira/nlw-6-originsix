@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Originsix</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+
   <!-- Icones -->
   <link rel="stylesheet" href="/style.92c6626b.css">
 
@@ -26,7 +31,7 @@
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
-          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title active" href="#home">Início</a></li>
           <li><a class="title" href="#about">Sobre</a></li>
           <li><a class="title" href="#services">Serviços</a></li>
           <li><a class="title" href="#testimonials">Depoimentos</a></li>
@@ -49,12 +54,12 @@
       </div>
 
       <div class="text">
-        <h2 class="title">
+        <h1 class="title">
           <span class="font-weight-normal">Saúde</span> 
           <span class="fill-bg">natural</span> 
           <span class="font-weight-normal">para os seus</span>
           <span class="fill-bg">cabelos</span>
-        </h2>
+        </h1>
         <p>
           Um salão exclusivo em São Paulo, especializado em tratamentos
           naturais.
@@ -73,9 +78,12 @@
         <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="3 mulheres sorrindo">
       </div>
       <div class="text">
-        <h2 class="title">
-          Sobre nós
-        </h2>
+        <div class="title">
+          <h1>
+            Sobre nós
+          </h1>
+        </div>
+        
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus. 
         </p>
@@ -170,7 +178,7 @@
           </div>
 
           <div class="testimonial swiper-slide swiper-slide-prev">
-            <blockquote>
+            <blockquote style="height: 100%;">
               <p>
                 <span>&ldquo;</span>
                 Eu estou passada com o resultado de vocês, com certeza meu cabelo melhorou e muito. Desejo muito sucesso!
@@ -183,7 +191,7 @@
           </div>
 
           <div class="testimonial swiper-slide swiper-slide-prev">
-            <blockquote>
+            <blockquote style="height: 100%;">
               <p>
                 <span>&ldquo;</span>
                 Sem palavras para descrever, esse baita profissionalismo e compentência. Isso ai espero voltar mais vezes.
@@ -214,29 +222,18 @@
     <div class="container">
       <div class="ourclients">
         <h1 class="title">Nossos clientes</h1>
-        <div class="swiper-container">
-          <ul class="swiper-wrapper">
-
-            <li class="swiper-slide">
-              <img src="/logo-jequiti.a81aabef.png" alt="logo jequiti">
-            </li>
-            <li class="swiper-slide">
-              <img src="/logo-embeleze.98fce26f.png" alt="logo-embeleze">
-            </li>
-            <li class="swiper-slide">
-              <img src="/logo-matisse.3d7245ea.png" alt="logo matisse">
-            </li>
-            <li class="swiper-slide">
-              <img src="/logo-pantene.63cb0444.png" alt="logo pantene">
-            </li>
-            <li class="swiper-slide">
-              <img src="/logo-avon.d8fa9a49.png" alt="logo avon">
-            </li>
-            <li class="swiper-slide">
-              <img src="/logo-vulti.c5982932.png" alt="logo vulti">
-            </li>
-          </ul>
+        <div class="slide-clients" style="padding: 3rem 0;">
+          <img src="/logo-jequiti.a81aabef.png" alt="logo jequiti">
+          <img src="/logo-embeleze.98fce26f.png" alt="logo-embeleze"> 
+          <img src="/logo-matisse.3d7245ea.png" alt="logo matisse">
+          <img src="/logo-pantene.63cb0444.png" alt="logo pantene">
+          <img src="/logo-avon.d8fa9a49.png" alt="logo avon">
+          <img src="/logo-vulti.c5982932.png" alt="logo vulti">
+          <img src="/wella_Logo.6ee05ca7.png" alt="logo wella">
         </div>
+
+        <div id="arrow-prev" class="arrow"></div>
+        <div id="arrow-next" class="arrow"></div>
 
       </div>
     </div>
@@ -285,6 +282,8 @@
       </div>
 
       <div class="social grid">
+        <p>Siga nossas redes</p>
+        
         <a href="https://instagram.com" target="_blank">
           <i class="icon-instagram"></i>
         </a>
@@ -299,7 +298,11 @@
 
   <div class="divider-2" style="height: 10px;"></div>
 
-  <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+  <a href="#home" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

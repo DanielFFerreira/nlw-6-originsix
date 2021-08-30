@@ -165,14 +165,18 @@ try {
 
 var header = document.querySelector('#header');
 var navHeight = header.offsetHeight;
-window.addEventListener('scroll', function () {
-  if (window.screenY >= navHeight) {
+
+function changeHeaderWhenScroll() {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
     header.classList.add('scroll');
   } else {
+    // menor que a altura do header
     header.classList.remove('scroll');
   }
-});
+}
 /* Testimonials carousel slider swiper */
+
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -196,8 +200,61 @@ var scrollReveal = ScrollReveal({
   duration: 700,
   reset: true
 });
-scrollReveal.reveal("#home .image, #home .text,\n  #about .image, #about .text,\n  #services header, #services .card,\n  #testimonials header, #testimonials .testimonials\n  #contact .text, #contact .links,\n  #ourclients .title, ul, img\n  footer .brand, footer .social\n  ", {
+scrollReveal.reveal("#home .image, #home .text,\n  #about .image, #about .text,\n  #services header, #services .card,\n  #testimonials header, #testimonials .testimonials\n  #contact .text, #contact .links,\n  #ourclients .title, img\n  footer .brand, footer .social\n  ", {
   Interval: 100
+}); // Slick
+
+$(function () {
+  $('.slide-clients').slick({
+    ots: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: true,
+    autoplaySpeed: 2800,
+    prevArrow: $('#arrow-prev'),
+    nextArrow: $('#arrow-next'),
+    responsive: [{
+      breakpoint: 811,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true
+      }
+    }, {
+      breakpoint: 430,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }]
+  });
+}); // back up button
+
+function backToTop() {
+  var backToTopButton = document.querySelector('.back-to-top');
+
+  if (window, scrollY >= 560) {
+    backToTopButton.classList.add('show');
+  } else {
+    backToTopButton.classList.remove('show');
+  }
+}
+/* When Scroll */
+
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll();
+  backToTop();
+  activateMenuAtCurrentSection();
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -227,7 +284,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44021" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35889" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
