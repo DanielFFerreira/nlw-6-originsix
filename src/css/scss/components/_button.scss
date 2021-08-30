@@ -10,12 +10,13 @@
   border-radius: 0.25rem;
   font: 500 1rem $body-font;
   transition: background 0.3s;
+
+  &:hover {
+    background: $base-color-alt;
+    cursor: pointer;
+    filter: brightness(1.1);
+    transition: all .2s ease;
+    box-shadow: 0 3.88px 18.81px 0 hsl(159 36% 57% / 88%);
+  }
 }
 
-.button:hover {
-  background: $base-color-alt;
-  cursor: pointer;
-  filter: brightness(1.1);
-  transition: all .2s ease;
-  box-shadow: 0 3.88px 18.81px 0 hsl(159 36% 57% / 88%);
-}
