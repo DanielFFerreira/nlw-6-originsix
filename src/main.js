@@ -68,7 +68,7 @@ scrollReveal.reveal(
 // Slick
 $(function() {
   $('.slide-clients').slick({
-    ots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 5,
