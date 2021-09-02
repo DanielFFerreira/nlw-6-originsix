@@ -10,6 +10,10 @@
 
 <br />
 
+<p align="center">
+ <img src="assets/fotos/beautysalon.gif" alt="PRs welcome!" />
+</p>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
