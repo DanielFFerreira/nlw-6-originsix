@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Originsix</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
-
   <!-- Icones -->
   <link rel="stylesheet" href="/style.92c6626b.css">
+
+  <!-- Splide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -222,20 +220,34 @@
     <div class="container">
       <div class="ourclients">
         <h1 class="title">Nossos clientes</h1>
-        <div class="slide-clients" style="padding: 3rem 0;">
-          <img src="/logo-jequiti.a81aabef.png" alt="logo jequiti">
-          <img src="/logo-embeleze.98fce26f.png" alt="logo-embeleze"> 
-          <img src="/logo-matisse.3d7245ea.png" alt="logo matisse">
-          <img src="/logo-pantene.63cb0444.png" alt="logo pantene">
-          <img src="/logo-avon.d8fa9a49.png" alt="logo avon">
-          <img src="/logo-vulti.c5982932.png" alt="logo vulti">
-          <img src="/wella_Logo.6ee05ca7.png" alt="logo wella">
+
+        <div id="one" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/logo-avon.d8fa9a49.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="/logo-embeleze.98fce26f.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="/logo-jequiti.a81aabef.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="/logo-matisse.3d7245ea.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="/logo-pantene.63cb0444.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="/logo-vulti.c5982932.png" alt="">
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div id="arrow-prev" class="arrow"></div>
-        <div id="arrow-next" class="arrow"></div>
-
       </div>
+
     </div>
   </section>
 
@@ -302,7 +314,8 @@
     <i class="icon-arrow-up"></i>
   </a>
 
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Splide -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
   <!-- swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
