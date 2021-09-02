@@ -65,47 +65,27 @@ scrollReveal.reveal(
   { Interval: 100 }
 )
 
-// Slick
-$(function() {
-  $('.slide-clients').slick({
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    autoplay: true,
-    autoplaySpeed: 2800,
-    prevArrow: $('#arrow-prev'),
-    nextArrow: $('#arrow-next'),
-    responsive: [
-      {
-        breakpoint: 811,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true
-        }
-      },
-
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true
-        }
-      },
-
-      {
-        breakpoint: 430,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true
-        }
-      }
-    ]
-  });
-})
+// Splide
+new Splide( '.splide', {
+  perPage: 5,
+  breakpoints: {
+    1100: {
+      perPage: 4
+    },
+    890: {
+      perPage: 3
+    },
+    600: {
+      perPage: 2
+    },
+    400: {
+      perPage: 1
+    },
+  },
+  rewind : true,
+  type: "loop",
+  autoplay: true,
+} ).mount(); 
 
 // back up button
 
