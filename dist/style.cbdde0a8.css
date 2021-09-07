@@ -366,6 +366,9 @@ h1 {
 #testimonials {
   background-color: #fff;
 }
+#testimonials .testimonials-content {
+  margin: 0 auto !important;
+}
 #testimonials .container {
   margin-left: 0;
   margin-right: 0;
@@ -553,6 +556,9 @@ h1 {
     text-align: center;
     max-width: 35rem;
     margin-bottom: 3rem;
+  }
+  .section header #testimonials {
+    padding: 3rem 0 0;
   }
   .section header #testimonials header {
     max-width: 32rem;

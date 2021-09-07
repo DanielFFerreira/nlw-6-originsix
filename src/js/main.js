@@ -52,10 +52,7 @@ new Glider(document.querySelector('.glider'), {
   slidesToScroll: 1,
   draggable: true,
   dots: '#dots',
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  },
+  
   responsive: [
     {
       breakpoint: 685,
