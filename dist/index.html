@@ -9,19 +9,24 @@
   <!-- Icones -->
   <link rel="stylesheet" href="/style.92c6626b.css">
 
-  <!-- Splide -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <!-- Glider -->
+  <link rel="stylesheet" href="/glider.min.befbfd2c.css">
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Splide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
   <link rel="stylesheet" href="/style.cbdde0a8.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Montserrat:wght@300;400display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
-<script src="/style.92c6626b.js"></script><script src="/style.cbdde0a8.js"></script></head>
+<script src="/style.92c6626b.js"></script><script src="/glider.min.befbfd2c.js"></script><script src="/style.cbdde0a8.js"></script></head>
 <body>
   <header id="header">
     <nav class="nav container">
@@ -160,9 +165,10 @@
           </h2>
         </div>
       </header>
-      <div class="testimonials swiper-container">
-        <div class="swiper-wrapper">
-          <div class="testimonial swiper-slide swiper-slide-active">
+      <div class="testimonials glider-contain">
+        
+        <div class="glider">
+          <div class="testimonial">
             <blockquote>
               <p>
                 <span>&ldquo;</span>
@@ -174,8 +180,8 @@
               </cite>
             </blockquote>
           </div>
-
-          <div class="testimonial swiper-slide swiper-slide-prev">
+  
+          <div class="testimonial">
             <blockquote style="height: 100%;">
               <p>
                 <span>&ldquo;</span>
@@ -187,8 +193,8 @@
               </cite>
             </blockquote>
           </div>
-
-          <div class="testimonial swiper-slide swiper-slide-prev">
+  
+          <div class="testimonial">
             <blockquote style="height: 100%;">
               <p>
                 <span>&ldquo;</span>
@@ -202,12 +208,15 @@
           </div>
         </div>
 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination-bullets" style="text-align: center;">
-          <span class="swiper-pagination-bullet"></span>
-          <span class="swiper-pagination-bullet"></span>
-          <span class="swiper-pagination-bullet"></span>
-        </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <div id="dots" class="glider-dots"></div>
 
       </div>
     </div>
@@ -314,10 +323,13 @@
     <i class="icon-arrow-up"></i>
   </a>
 
+  <!-- Glider -->
+  <script src="/glider.min.be4b052e.js"></script>
+
   <!-- Splide -->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-  <!-- swiper -->
+  <!-- Swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Scrollreveal -->
