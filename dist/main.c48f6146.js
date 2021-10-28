@@ -191,20 +191,6 @@ var swiper = new Swiper('.swiper-container', {
       setWrapperSize: true
     }
   }
-}); // Glider
-
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: '#dots',
-  responsive: [{
-    breakpoint: 685,
-    settings: {
-      slidesToShow: '2',
-      slidesToScroll: '2'
-    }
-  }]
 });
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 
@@ -284,7 +270,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40583" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57117" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

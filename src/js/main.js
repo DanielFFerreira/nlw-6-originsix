@@ -45,25 +45,6 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-// Glider
-
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: '#dots',
-  
-  responsive: [
-    {
-      breakpoint: 685,
-      settings: {
-        slidesToShow: '2',
-        slidesToScroll: '2',
-      }
-    },
-  ]
-})
-
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',

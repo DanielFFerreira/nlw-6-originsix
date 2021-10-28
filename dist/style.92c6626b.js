@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/icomoon.eot":[["icomoon.8106b2e8.eot","assets/fonts/fonts/icomoon.eot"],"assets/fonts/fonts/icomoon.eot"],"./fonts/icomoon.ttf":[["icomoon.02eeed7f.ttf","assets/fonts/fonts/icomoon.ttf"],"assets/fonts/fonts/icomoon.ttf"],"./fonts/icomoon.woff":[["icomoon.b2edcac2.woff","assets/fonts/fonts/icomoon.woff"],"assets/fonts/fonts/icomoon.woff"],"./fonts/icomoon.svg":[["icomoon.8a323241.svg","assets/fonts/fonts/icomoon.svg"],"assets/fonts/fonts/icomoon.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts\\icomoon.eot":[["icomoon.8106b2e8.eot","assets/fonts/fonts/icomoon.eot"],"assets/fonts/fonts/icomoon.eot"],"./fonts\\icomoon.ttf":[["icomoon.02eeed7f.ttf","assets/fonts/fonts/icomoon.ttf"],"assets/fonts/fonts/icomoon.ttf"],"./fonts\\icomoon.woff":[["icomoon.b2edcac2.woff","assets/fonts/fonts/icomoon.woff"],"assets/fonts/fonts/icomoon.woff"],"./fonts\\icomoon.svg":[["icomoon.8a323241.svg","assets/fonts/fonts/icomoon.svg"],"assets/fonts/fonts/icomoon.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40583" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57117" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
